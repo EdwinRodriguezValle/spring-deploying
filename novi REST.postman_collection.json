@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "68cae363-6926-42e1-b611-89986608a750",
+		"name": "novi REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22971310"
+	},
+	"item": [
+		{
+			"name": "put/api/user/actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 20,\r\n        \"username\": \"Este se actualizo\",\r\n        \"lastname\": \"Rodriguez Valle\",\r\n        \"gender\": \"Male\",\r\n        \"birthday\": \"1978-08-10\",\r\n        \"address\": \"Camera Obscuradreeft 45\",\r\n        \"email\": \"rodriguez.valle.edwin@gmail.com\",\r\n        \"languages\": \"Spanish\",\r\n        \"activeUser\": true,\r\n        \"telephone\": 638497646,\r\n        \"ocupation\": \"It professional\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/get/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"get",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/get/user/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"get",
+						"user",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/hola",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get/api/hola",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get",
+						"api",
+						"hola"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/bootstrap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/bootstrap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bootstrap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/save/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\": \"Jesus\",\r\n        \"lastname\": \"Rodriguez Valle\",\r\n        \"gender\": \"Male\",\r\n        \"birthday\": \"1978-08-10\",\r\n        \"address\": \"Camera Obscuradreeft 45\",\r\n        \"email\": \"rodriguez.valle.edwin@gmail.com\",\r\n        \"languages\": \"Spanish\",\r\n        \"activeUser\": true,\r\n        \"telephone\": 638497646,\r\n        \"ocupation\": \"It professional\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/save/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"save",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete/user/by/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\": \"Este se actualizo\",\r\n        \"lastname\": \"Rodriguez Valle\",\r\n        \"gender\": \"Male\",\r\n        \"birthday\": \"1978-08-10\",\r\n        \"address\": \"Camera Obscuradreeft 45\",\r\n        \"email\": \"rodriguez.valle.edwin@gmail.com\",\r\n        \"languages\": \"Spanish\",\r\n        \"activeUser\": true,\r\n        \"telephone\": 638497646,\r\n        \"ocupation\": \"It professional\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/delete/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/deleteAll/users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/delete/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
